@@ -1,16 +1,89 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Webpage</title>
+    <style>
+        :root {
+            background-color: (135,206,235);
+        }
+        
+        article {
+            width: 500px;
+            margin: 50px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        
+        }
+        article p:first-child {
+            background-color: black;
+            color: white;
+            padding: 10px;
+
+        }
+        
+        article p: nth-child {
+            color: red;
+            padding:1px;
+        }
+        ul {
+            liat-style; none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            width: 50%;
+            paddig:10px;
+            margin-bottom: 10px;
+            border:1px solid#ccc;
+            border-radius: 5px;
+        }
+        ul li:nith-child(odd) {
+            background-color: pink;
+        }
+
+        .topic-tags {
+            display: flex;
+            flex: wrap;
+            justify-content: center;
+            margin: 50px auto;
+        }
+        .topic-tags a{
+            display :inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            border: 1px solid#ccc;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .topic-tags a:hover {
+            background-color:#eee;
+
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <article>
+        <P>This is the first paragraph with white text on a black background </P>
+        <p>this is the second paragraph with standard text color</p>
+        <p>This is the third paragraph with red text.</p>
+    </article>
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+        <li>item5</li>
+    </ul>
+    <div> class="topic-tags">
+        <a href="#">topic 2</a>
+        <a href="#">topic 3</a>
+        <a href="#">topic 4</a>
+        <a href="#">topic 5</a>
+    </div>
 </body>
-
 </html>
